@@ -12,14 +12,20 @@ public class Main {
 
         //Wypisz elemnty tablicy
 
-        System.out.println("wylosowana tablica: ");
-        for (int i = 0; i < tablicaWylosowanychLiczb.length ; i++) {
-            System.out.println(tablicaWylosowanychLiczb[i]+ ", ");
+        wypisz(tablicaWylosowanychLiczb);
+        System.out.println();
+
+        //losuj 30 liczb z zakresu 1,40 bez powtorzen
+
+
 
         }
 
+    private static void wypisz(int[] tablica){
+        for (int i = 0; i < tablica.length ; i++) {
+            System.out.println(tablica[i]+ ", ");
 
-
+        }
     }
 
     private static int[] losujLiczbyDoTablicy(int ileLiczb){
