@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Main {
@@ -20,8 +21,21 @@ public class Main {
 
 
         }
+ private static ArrayList<Integer>wylosujLiczbyBezPowtorzenDoListy(int ileLiczb){
+        ArrayList<Integer> LiczbyWylosowane = new ArrayList<>();
+        //nie musi byc znany rozmiar listy, moze byc zmieniony w trakcie działania programu
+        //w kazdej kolekcji tylko typy złozone
+        //typ zlozony pisany wielka litera
 
+        Random random = new Random();
+     for (int i = 0; i <ileLiczb ; i++) {
+         LiczbyWylosowane.add(random.nextInt(40)+1);
+     }
+
+        return LiczbyWylosowane;
+ }
     private static void wypisz(int[] tablica){
+        System.out.println("wylosowana Tablica: ");
         for (int i = 0; i < tablica.length ; i++) {
             System.out.println(tablica[i]+ ", ");
 
