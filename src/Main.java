@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         //losuj 10 liczb do tablicy
 
-        int[] tablicaWylosowanychLiczb = new int[10];
+        int[] tablicaWylosowanychLiczb = new int[5];
         Random random = new Random();
         for (int i = 0; i < tablicaWylosowanychLiczb.length; i++) {
             tablicaWylosowanychLiczb[i] = random.nextInt(100)+1;//od 1 do 101
@@ -20,5 +20,15 @@ public class Main {
 
 
 
+    }
+
+    private static int[] losujLiczbyDoTablicy(int ileLiczb){
+        int[] liczbyWylosowane = new int[ileLiczb];
+        Random random = new Random();
+        for (int i = 0; i < liczbyWylosowane.length; i++) {
+           liczbyWylosowane[i] = random.nextInt(100) + 1;
+
+        }
+        return liczbyWylosowane;
     }
 }
